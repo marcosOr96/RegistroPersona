@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="555.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registropersona.HelloController">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="555.0" style="-fx-background-color: #07093d;" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoTienda" fitHeight="63.0" fitWidth="122.0" focusTraversable="true" onMouseClicked="#onTiendaButtonClicked" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/tienda.png" />
+                     </image>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoCliente" fitHeight="61.0" fitWidth="150.0" focusTraversable="true" onMouseClicked="#onClienteButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/cliente.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoCamara" fitHeight="62.0" fitWidth="150.0" focusTraversable="true" onMouseClicked="#onCamaraButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/camara.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoMarca" fitHeight="64.0" fitWidth="60.0" focusTraversable="true" onMouseClicked="#onMarcaButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/marca.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoModelo" fitHeight="60.0" fitWidth="150.0" focusTraversable="true" onMouseClicked="#onModeloButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/modelo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="iconoPelicula" fitHeight="67.0" fitWidth="56.0" focusTraversable="true" onMouseClicked="#onPeliculaButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/cualquiera/RegistroPersona/src/main/java/imagenes/pelicula.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pageTienda" layoutY="67.0" prefHeight="322.0" prefWidth="555.0" style="-fx-background-color: #353547;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField focusColor="#cce81c" layoutX="210.0" layoutY="37.0" prefHeight="25.0" prefWidth="164.0" promptText="Digite nombre de la tienda" style="-fx-text-fill: #cce81c#cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="211.0" layoutY="86.0" prefHeight="25.0" prefWidth="164.0" promptText="Digite direccion" style="-fx-text-fill: #cce81c#cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="210.0" layoutY="139.0" prefHeight="25.0" prefWidth="164.0" promptText="Digite telefono" style="-fx-text-fill: #cce81c#cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="210.0" layoutY="189.0" prefHeight="25.0" prefWidth="164.0" promptText="Digite documento del cliente" style="-fx-text-fill: #cce81c#cce81c;" />
+            <Label layoutX="45.0" layoutY="39.0" text=" Nombre de la tienda" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="141.0" text="telefono" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="88.0" text="dirección" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="191.0" text="cliente" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="242.0" text="Camara" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxDI" layoutX="410.0" layoutY="189.0" prefHeight="25.0" prefWidth="95.0" promptText="D . I ." />
+            <ComboBox fx:id="comboBoxCamara" layoutX="210.0" layoutY="240.0" prefHeight="25.0" prefWidth="164.0" promptText="Seleccionar Camara" />
+            <Label layoutX="254.0" layoutY="14.0" text="TIENDA" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="23.0" opacity="0.3" prefWidth="200.0" />
+            <Separator layoutX="341.0" layoutY="23.0" opacity="0.3" prefWidth="200.0" />
+         </children></AnchorPane>
+      <ImageView fitHeight="31.0" fitWidth="311.0" layoutX="46.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="51.0">
+         <image>
+            <Image url="@../../../../java/imagenes/puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="80.0" layoutX="134.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../../java/imagenes/puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="80.0" layoutX="222.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../../java/imagenes/puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="80.0" layoutX="397.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../../java/imagenes/puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="80.0" layoutX="485.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../../java/imagenes/puntero.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pageCliente" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353547;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField focusColor="#d2e732" layoutX="228.0" layoutY="93.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite nombre de cliente" style="-fx-text-fill: #cce81c#cce81c;" />
+            <JFXTextField focusColor="#d2e732" layoutX="228.0" layoutY="137.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite tipo documento" style="-fx-text-fill: #cce81c#cce81c;" />
+            <JFXTextField focusColor="#d2e732" layoutX="228.0" layoutY="182.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite numero documento" style="-fx-text-fill: #cce81c#cce81c;" />
+            <Label layoutX="60.0" layoutY="95.0" text="Nombre de cliente" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="139.0" text="Tipo de documento" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="184.0" text="Numero de documento" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="471.0" layoutY="26.0" text="CLIENTE" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="22.0" layoutY="35.0" opacity="0.3" prefHeight="3.0" prefWidth="429.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pageCamara" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353547;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField fx:id="textCamara" focusColor="#cce81c" layoutX="245.0" layoutY="42.0" promptText="Digite nombre de camara" style="-fx-text-fill: #cce81c;" />
+            <Label layoutX="85.0" layoutY="46.0" text="Nombre de camara" textFill="WHITE" />
+            <Label layoutX="85.0" layoutY="93.0" text="Peliculas" textFill="WHITE" />
+            <Label layoutX="253.0" layoutY="14.0" text="CAMARA" textFill="WHITE" />
+            <Separator layoutX="14.0" layoutY="21.0" opacity="0.3" prefWidth="200.0" />
+            <Separator layoutX="341.0" layoutY="23.0" opacity="0.3" prefWidth="200.0" />
+            <ComboBox fx:id="comboBoxPelicula" layoutX="238.0" layoutY="89.0" prefWidth="150.0" promptText="Seleccionar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pageMarca" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353547;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField focusColor="#cce81c" layoutX="245.0" layoutY="73.0" promptText="Digite nombre" style="-fx-text-fill: #cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="245.0" layoutY="139.0" promptText="Digite direccion" style="-fx-text-fill: #cce81c;" />
+            <Label layoutX="91.0" layoutY="75.0" text="Nombre de marca" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="141.0" text="Direccion de soporte" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="22.0" text="MARCA" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="98.0" layoutY="21.0" opacity="0.3" prefHeight="3.0" prefWidth="429.0" />
+            <Separator layoutX="98.0" layoutY="41.0" opacity="0.3" prefHeight="3.0" prefWidth="429.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pageModelo" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353547;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField focusColor="#cce81c" layoutX="224.0" layoutY="90.0" promptText="Digite nombre" style="-fx-text-fill: #cce81c;" />
+            <Label layoutX="68.0" layoutY="92.0" text="Nombre del modelo " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="152.0" text="Item" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxItem" layoutX="216.0" layoutY="149.0" prefWidth="150.0" promptText="Seleccionar Item" />
+            <Label layoutX="24.0" layoutY="23.0" text="MODELO DE CAMARA" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="198.0" layoutY="32.0" opacity="0.3" prefHeight="3.0" prefWidth="311.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pagePelicula" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353547;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <JFXTextField focusColor="#cce81c" layoutX="251.0" layoutY="50.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite nombre de pelicula" style="-fx-text-fill: #cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="251.0" layoutY="108.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite sencibilidad" style="-fx-text-fill: #cce81c;" />
+            <JFXTextField focusColor="#cce81c" layoutX="251.0" layoutY="161.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite formato" style="-fx-text-fill: #cce81c;" />
+            <Label layoutX="92.0" layoutY="54.0" text="Nombre de la pelicula" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="111.0" text="Sencibilidad" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="164.0" text="Formato" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="21.0" text="PELICULA DE LA CAMARA" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="209.0" layoutY="30.0" opacity="0.3" prefHeight="3.0" prefWidth="321.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
